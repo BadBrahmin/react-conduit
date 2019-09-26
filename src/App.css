@@ -20,3 +20,44 @@
 .App-link {
   color: #09d3ac;
 }
+
+.container {
+  width: 50rem;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 5rem;
+}
+
+.topText {
+}
+
+.inputDiv {
+  flex-direction: column;
+  width: 30rem;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.inputDiv input {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.2rem;
+  outline: 0;
+}
+
+.btn {
+  width: 8rem;
+  height: 3rem;
+  outline: 0;
+  border: 0;
+  background: #61b960;
+  border-radius: 10%;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
