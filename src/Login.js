@@ -10,14 +10,14 @@ class Login extends React.Component {
   }
 
   render() {
-    const email = this.props.email;
-    const password = this.props.password;
+    // const email = this.props.email;
+    // const password = this.props.password;
 
     return (
       <div>
-        <div className="topText">
-          <h1>Sign In</h1>
-          <h4>Need an account?</h4>
+        <div>
+          <h2>Sign In</h2>
+          <h4 className="green-text">Need an account?</h4>
         </div>
 
         {/* input */}

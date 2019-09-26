@@ -22,9 +22,9 @@ class Register extends React.Component {
 
     return (
       <>
-        <div className="topText">
-          <h1>Sign Up</h1>
-          <h4>Need an account?</h4>
+        <div>
+          <h2>Sign Up</h2>
+          <h4 className="green-text">Need an account?</h4>
         </div>
 
         <form className="inputDiv flex">
