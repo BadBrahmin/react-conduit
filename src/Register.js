@@ -1,6 +1,6 @@
 import React from "react";
 
-class Login extends React.Component {
+class Register extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -8,29 +8,46 @@ class Login extends React.Component {
       email: "",
       password: ""
     };
-  };
+  }
 
   render() {
+    const username = this.props.username;
     const email = this.props.email;
     const password = this.props.password;
 
+    this.handleSubmit = event => {
+      this.setState({ value: event.target.value });
+      console.log(this.username);
+    };
+
     return (
-      <div className="topText">
+      <>
+        <div className="topText">
           <h1>Sign Up</h1>
           <h4>Need an account?</h4>
         </div>
 
-        <div className="inputDiv flex">
-          <input type="text" placeholder="Username"></input>
-          <input type="email" placeholder="Email"></input>
-          <input type="password" placeholder="Password"></input>
-        </div>
+        <form className="inputDiv flex">
+          <input
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={this.handleSubmit}
+          ></input>
+          <input type="email" placeholder="Email" value={email}></input>
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+          ></input>
+        </form>
 
         <div>
           <button className="btn">Sign Up</button>
         </div>
+      </>
     );
   }
 }
 
-export default Login;
+export default Register;
