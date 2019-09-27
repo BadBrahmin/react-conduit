@@ -130,7 +130,7 @@ table {
 
 .App {
   text-align: center;
-  margin-top: 10rem;
+  height: 100vh;
 }
 
 .App-logo {
@@ -143,7 +143,6 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -152,28 +151,40 @@ table {
   color: #09d3ac;
 }
 
+.header {
+  background: #61b960;
+}
+
 .container {
   width: 50rem;
+
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   border: 1px solid black;
   padding: 2rem;
+  margin-top: 10rem;
+}
+
+.header .wrapper {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 h1 {
   font-size: 2rem;
-  margin: 1rem;
+  margin: 0;
+  color: white;
 }
-.green-text,
-h1 {
+.green-text {
   color: #61b960;
 }
 
 .inputDiv {
   flex-direction: column;
   width: 30rem;
-  margin: 0 auto;
+  margin: 0;
   justify-content: center;
 }
 
@@ -197,16 +208,42 @@ h1 {
 
 .flex {
   display: flex;
+  /* margin-left: 1rem; */
 }
 
 .between {
   justify-content: space-between;
 }
 
-.navList li,
+/* .baseline {
+  justify-content: baseline;
+} */
+
+.navList li {
+  /* margin-left: 1rem;
+  margin-top: 1.5rem; */
+
+  margin: 1rem 1.5rem;
+}
+
 a {
-  margin-left: 1rem;
-  list-style: none;
+  /* list-style: none; */
   text-decoration: none;
-  color: grey;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.form-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* HOME PAGE */
+
+.homeHero {
+  background: #61b960;
+  width: 100%;
+  color: white;
 }

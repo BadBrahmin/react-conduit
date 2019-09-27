@@ -14,7 +14,7 @@ class Header extends React.Component {
       <div>
         <header>
           <div className="wrapper flex between">
-            <h1>conduit</h1>
+            <h1>Conduit</h1>
             <nav className="nav">
               <ul className="navList flex">
                 <li>
