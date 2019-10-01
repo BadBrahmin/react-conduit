@@ -1,22 +1,8 @@
 import React from "react";
-import "./App.css";
-import Register from "./Register";
-import Login from "./Login";
-import Header from "./Header";
+import "./Stylesheets/style.css";
 
 function App() {
-  return (
-    <div className="App">
-      <div className="header">
-        <Header />
-      </div>
-
-      <div className="container flex form-container">
-        <Register />
-        <aside></aside>
-      </div>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
