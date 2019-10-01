@@ -208,7 +208,7 @@ h1 {
 
 .flex {
   display: flex;
-  /* margin-left: 1rem; */
+  margin-left: 1rem;
 }
 
 .between {
@@ -238,7 +238,6 @@ a {
   align-items: center;
   flex-direction: column;
 }
-
 
 /* HOME PAGE */
 

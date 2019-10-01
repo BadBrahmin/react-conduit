@@ -10,16 +10,10 @@ function App() {
       <div className="header">
         <Header />
       </div>
-      <div className="homeHero">
-        <h1>conduit</h1>
-        <h2>A place to share your knowledge</h2>
-      </div>
-      <div className="container flex form-container">
-      {/* <Register /> */}
 
-      <aside>
-        
-      </aside>
+      <div className="container flex form-container">
+        <Register />
+        <aside></aside>
       </div>
     </div>
   );

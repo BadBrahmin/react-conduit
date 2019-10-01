@@ -1,5 +1,53 @@
 import React from "react";
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Register extends React.Component {
   constructor() {
     super();
@@ -11,9 +59,9 @@ class Register extends React.Component {
   }
 
   render() {
-    const username = this.props.username;
-    const email = this.props.email;
-    const password = this.props.password;
+    // const username = this.props.username;
+    // const email = this.props.email;
+    // const password = this.props.password;
 
     this.handleSubmit = event => {
       this.setState({ value: event.target.value });
