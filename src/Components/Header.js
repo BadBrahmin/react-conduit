@@ -8,15 +8,17 @@ class Header extends React.Component {
         <header className="headerContainer">
           <nav className="nav flex-between">
             <div>
-              <h4> conduit</h4>
+              <Link to="/">
+                <h4> conduit</h4>
+              </Link>
             </div>
             <div>
               <ul className="navLink">
-                <Link to="#">Home</Link>
+                <Link to="/">Home</Link>
 
-                <Link to="#">Sign in</Link>
+                <Link to="/signin">Sign in</Link>
 
-                <Link to="#">Sign out</Link>
+                <Link to="/signup">Sign out</Link>
               </ul>
             </div>
           </nav>
