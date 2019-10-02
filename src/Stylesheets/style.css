@@ -208,3 +208,11 @@ input {
   .banner h4 {
     color: #d3cdcd;
     font-weight: 300; }
+
+hr {
+  margin: 0 auto; }
+
+.feedContainer {
+  width: 50%;
+  background: #fff;
+  margin: 0 auto; }
