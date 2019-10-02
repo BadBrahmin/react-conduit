@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header";
 
-class Signin extends React.Component {
+class NewArticle extends React.Component {
   state = {
-    email: "",
-    password: ""
+    title: "",
+    description: ""
   };
 
   handleSubmit = e => {
@@ -39,30 +39,30 @@ class Signin extends React.Component {
           <div className="boxContainer">
             <div className="flex-column flex-center">
               <div>
-                <h2>Sign In</h2>
+                <h2>New Article</h2>
+                {/* <h4>Write your thing out below</h4> */}
               </div>
+              <form className="newArticle" onSubmit={this.handleSubmit}>
+                <input
+                  type="text"
+                  placeholder="Title"
+                  name="title"
+                  onChange={this.handleChange}
+                  value={this.state.title}
+                ></input>
+                <textarea
+                  placeholder="Text"
+                  rows="5"
+                  name="description"
+                  onChange={this.handleChange}
+                  value={this.state.description}
+                ></textarea>
 
-              <form
-                className="flex-center flex-column"
-                onSubmit={this.handleSubmit}
-              >
                 <input
-                  type="email"
-                  placeholder="Email"
-                  name="email"
-                  value={this.state.email}
-                  onChange={this.handleChange}
+                  type="submit"
+                  className="btn btn-secondary"
+                  value="Publish"
                 />
-                <input
-                  type="password"
-                  placeholder="Password"
-                  name="password"
-                  value={this.state.password}
-                  onChange={this.handleChange}
-                />
-                <button className="btn" type="submit">
-                  Sign In
-                </button>
               </form>
             </div>
           </div>
@@ -72,4 +72,4 @@ class Signin extends React.Component {
   }
 }
 
-export default Signin;
+export default NewArticle;
