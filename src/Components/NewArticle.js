@@ -10,19 +10,25 @@ class NewArticle extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     console.log("fetch");
-    console.log(this.state);
-    fetch("https://conduit.productionready.io/api/users/login", {
+    // console.log(this.state);
+    console.log(localStorage.authToken);
+    fetch("https://conduit.productionready.io/api/articles", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        Authorization: localStorage.authToken
       },
-      body: JSON.stringify({ user: this.state })
+      body: JSON.stringify({
+        title: this.state.title,
+        description: this.state.description
+      })
     })
       .then(res => res.json())
       .then(data => {
-        localStorage.setItem("authToken", data.authToken);
+        console.log(data);
         this.props.history.push("/");
-      });
+      })
+      .catch("");
   };
 
   handleChange = e => {
