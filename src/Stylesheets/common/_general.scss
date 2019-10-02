@@ -1,5 +1,30 @@
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.boxContainer {
+  width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  //   align-items: center;
+}
+
+input {
+  width: 500px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 0.5px solid #cad8c9;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  background: $primaryBtn;
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin: 1rem;
+  border-radius: 6px;
 }

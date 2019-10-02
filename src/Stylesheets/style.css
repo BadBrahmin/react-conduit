@@ -105,6 +105,13 @@ p {
   text-align: center; }
 
 /*Flex properties*/
+.flex {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
 .flex-between {
   display: flex;
   align-items: center;
@@ -148,4 +155,56 @@ p {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
+  height: 100vh; }
+
+.boxContainer {
+  width: 800px;
+  margin: 0 auto;
   padding: 2rem; }
+
+input {
+  width: 500px;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 0.5px solid #cad8c9;
+  padding: 1rem;
+  margin-top: 1rem; }
+
+.btn {
+  background: #61b85c;
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin: 1rem;
+  border-radius: 6px; }
+
+.headerContainer {
+  width: 60%;
+  background: #fff;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto; }
+
+.nav {
+  width: 100%;
+  padding: 1rem 0; }
+  .nav h4 {
+    color: #61b85c; }
+  .nav a {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #d3cdcd; }
+
+.banner {
+  box-shadow: inset 0px 0px 3px 0.5px rgba(0, 0, 0, 0.75);
+  background: #61b85c;
+  padding: 3rem;
+  text-align: center; }
+  .banner h2 {
+    font-size: 4rem;
+    color: #fff; }
+  .banner h4 {
+    color: #d3cdcd;
+    font-weight: 300; }

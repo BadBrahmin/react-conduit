@@ -1,23 +1,22 @@
 import React from "react";
 
-class Signup extends React.Component {
+class Signin extends React.Component {
   render() {
     return (
       <div className="wrapper">
         <div className="boxContainer">
           <div className="flex-column flex-center">
             <div>
-              <h2>Sign Up</h2>
+              <h2>Sign In</h2>
             </div>
 
             <div className="flex-center flex-column">
-              <input type="text" placeholder="Username" />
               <input type="email" placeholder="Email" />
               <input type="password" placeholder="Password" />
             </div>
 
             <button className="btn" type="submit">
-              Sign Up
+              Sign In
             </button>
           </div>
         </div>
@@ -26,4 +25,4 @@ class Signup extends React.Component {
   }
 }
 
-export default Signup;
+export default Signin;

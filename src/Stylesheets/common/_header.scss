@@ -1,0 +1,37 @@
+.headerContainer {
+  width: 60%;
+  background: $white;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  padding: 1rem 0;
+  h4 {
+    color: $primary;
+  }
+  a {
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $grey;
+  }
+}
+
+.banner {
+  box-shadow: inset 0px 0px 3px 0.5px rgba(0, 0, 0, 0.75);
+  background: $primary;
+  padding: 3rem;
+  text-align: center;
+  h2 {
+    font-size: 4rem;
+    color: $white;
+  }
+  h4 {
+    color: $grey;
+    font-weight: 300;
+  }
+}

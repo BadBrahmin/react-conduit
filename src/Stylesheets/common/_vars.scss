@@ -1,6 +1,8 @@
 // Colors
-$primary : black;
-
+$primary: #61b85c;
+$primaryBtn: #61b85c;
+$grey: #d3cdcd;
+$white: #fff;
 // Fonts
 
 // box shadow that I like to use
@@ -9,8 +11,8 @@ $shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
 // Mixin I like, below comment shows how to use it
 // @include border-radius(0.5rem);
 @mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
