@@ -23,6 +23,7 @@ class Signin extends React.Component {
         localStorage.setItem("authToken", data.authToken);
         this.props.history.push("/");
       });
+    console.log(localStorage.authToken);
   };
 
   handleChange = e => {

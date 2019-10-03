@@ -239,3 +239,21 @@ hr {
     width: 20%;
     background: #61b85c;
     text-align: center; }
+
+h2 {
+  color: #61b85c; }
+
+.profileContainer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  border: 0.5px solid #cad8c9;
+  color: #d3cdcd; }
+  .profileContainer h2 {
+    padding: 1rem; }
+
+.profileFeed {
+  border: 0.5px solid #cad8c9;
+  margin-top: 2rem;
+  padding: 1rem; }

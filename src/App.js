@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import { Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NewArticle from "./Components/NewArticle";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/signin" component={Signin} />
       <Route exact path="/signup" component={Signup} />
       <Route exact path="/newarticle" component={NewArticle} />
+      <Route exact path="/profile" component={Profile} />
     </>
   );
 }

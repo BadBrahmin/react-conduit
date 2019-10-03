@@ -1,0 +1,22 @@
+h2 {
+  color: $primary;
+}
+
+.profileContainer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  border: 0.5px solid #cad8c9;
+  color: $grey;
+
+  h2 {
+    padding: 1rem;
+  }
+}
+
+.profileFeed {
+  border: 0.5px solid #cad8c9;
+  margin-top: 2rem;
+  padding: 1rem;
+}
